@@ -18,3 +18,6 @@ docker run --rm -v ${pwd}:/data ajegu/composer init --name `PROJECT_NAME`
 
 ### Laravel install 
 docker run --rm -v ${pwd}:/data ajegu/composer create-project --prefer-dist laravel/laravel `PROJECT_NAME`
+
+### Lumen install 
+docker run --rm -v ${pwd}:/data ajegu/composer create-project --prefer-dist laravel/lumen  `PROJECT_NAME`
