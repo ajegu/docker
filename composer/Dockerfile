@@ -1,8 +1,7 @@
-FROM php:7.4-fpm
-LABEL "description" "Run Composer"
+FROM php:8.0.0-fpm
 ENV DIR=/data
+VOLUME [ $DIR ]
 RUN mkdir -p $DIR
-VOLUME [ $DIR ] 
 RUN cd $DIR
 RUN apt-get update && apt-get install -y
 RUN apt-get install -y \
